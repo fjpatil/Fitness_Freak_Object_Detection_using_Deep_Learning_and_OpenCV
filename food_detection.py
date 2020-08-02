@@ -75,7 +75,7 @@ for i in indices:
     h = box[3]
     draw_prediction(image, class_ids[i], confidences[i], round(x), round(y), round(x+w), round(y+h))
 
-loc='C:\\Users\\fjpat\\Downloads\\drfoodie-master\\drfoodie-master\\food calories.xlsx'
+loc='D:\\Github\\code\\Fitness_Freak_Object_Detection_using_Deep_Learning_and_OpenCV\\food_calories.xlsx'
 #location of the file containing values of calories of different food items
 wb = xlrd.open_workbook(loc) 
 sheet = wb.sheet_by_index(0)
