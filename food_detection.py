@@ -24,9 +24,9 @@ def draw_prediction(img, class_id, confidence, x, y, x_plus_w, y_plus_h):
     cv2.rectangle(img, (x,y), (x_plus_w,y_plus_h), color, 2)
     cv2.putText(img, label, (x-10,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
-curw=int(input("Enter your current weight"))
-tarw=int(input("Enter your target weight"))
-days=int(input("Enter the number of days in which you want to achieve the target weight"))
+curw=int(input("Enter your current weight-----:"))
+tarw=int(input("Enter your target weight------:"))
+days=int(input("Enter the number of days in which you want to achieve the target weight : "))
 image = cv2.imread(args.image)
 Width = image.shape[1]
 Height = image.shape[0]
